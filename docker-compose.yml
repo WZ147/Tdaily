@@ -1,0 +1,14 @@
+services:
+  tdaily:
+    build: .
+    container_name: tdaily
+    restart: unless-stopped
+    ports:
+      - "3888:3888"
+    environment:
+      - PORT=3888
+      - TZ=Asia/Shanghai
+      # 如需限制注册，取消下面一行注释并改成你的邀请码
+      # - TD_INVITE=my-invite-code
+    volumes:
+      - ./data:/app/data

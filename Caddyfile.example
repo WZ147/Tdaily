@@ -1,0 +1,9 @@
+# Caddy 自动 HTTPS 配置示例
+# 使用方法：
+#   1. 把本文件改名为 Caddyfile（去掉 .example）
+#   2. 把下面的域名换成你自己的域名（域名要先解析到服务器 IP）
+#   3. 在服务器上执行：docker compose -f docker-compose.yml -f docker-compose.https.yml up -d --build
+
+tdaily.example.com {
+    reverse_proxy tdaily:3888
+}

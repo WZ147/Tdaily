@@ -1,0 +1,12 @@
+{
+  "name": "tdaily",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tdaily - 个人日常系统（待办 / 习惯 / 记录 / 日历 / 统计），电脑与手机双端使用",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

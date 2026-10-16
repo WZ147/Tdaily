@@ -1,0 +1,18 @@
+# 可选：带域名 + HTTPS 的部署（配合 Caddyfile 使用）
+# 启动命令：docker compose -f docker-compose.yml -f docker-compose.https.yml up -d --build
+services:
+  caddy:
+    image: caddy:2
+    container_name: tdaily-caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
