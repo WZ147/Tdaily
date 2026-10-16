@@ -77,4 +77,4 @@ data/          # 运行时数据（不入库，首次运行自动创建）
 
 ## 📄 License
 
-暂未添加开源许可证。
+本项目基于 [MIT 许可证](LICENSE) 开源，Copyright (c) 2026 WangZitao。
